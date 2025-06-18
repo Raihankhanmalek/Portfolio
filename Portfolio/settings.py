@@ -30,10 +30,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = 'eftq=^y3#8)kgr0psjp(f0w62f#_nbekde^k_x@fxezv(fcl3d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://portfolio-lnu0.onrender.com']
 
 
 # Application definition
@@ -132,7 +131,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'raihankhanmalek@gmail.com'
-EMAIL_HOST_PASSWORD = 'Raihan@786'
+EMAIL_HOST_USER = 'your_email@gmail.com'
+EMAIL_HOST_PASSWORD = 'your_email_password'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
