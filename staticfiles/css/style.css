@@ -9771,3 +9771,22 @@ body::-webkit-scrollbar {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.certificate-box {
+  display: none; /* Certificates are hidden by default */
+}
+.certificate-box.visible {
+  display: block; /* Show certificates when they become visible */
+}
+.certificate-box img {
+    /* border: 1px solid black; Subtle light-gray border */
+    border-radius: 7px; /* Rounded corners */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  }
+
+  /* Hover effect for certificates */
+.certificate-box img:hover {
+  transform: scale(1.09); /* Slight zoom effect */
+  border: none;
+}
